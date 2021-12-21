@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="test.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="DemoAppLaunch(failed)" parallel="methods">
+    <classes>
+      <class name="test.BaseValidation">
+        <methods>
+          <include name="invalidCredentials"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.BaseValidation -->
+    </classes>
+  </test> <!-- DemoAppLaunch(failed) -->
+</suite> <!-- Failed suite [Suite] -->
